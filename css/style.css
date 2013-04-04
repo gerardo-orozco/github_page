@@ -219,7 +219,7 @@
         min-height:230px;
         margin-left:10px;
         background:url(../images/personal-info-sep.png) no-repeat left top;
-        padding:20px 0 0 20px;
+        padding:20px 0 0 30px;
     }
     .personal-info li {
         font-size:14px;
@@ -447,10 +447,10 @@
         -webkit-border-radius: 3px
     }
     #portfolio-filter li a:hover {
-        background-color: #444;
+        background-color: #3489d8;
     }
     #portfolio-filter li a.current {
-        background-color: #444;
+        background-color: #3489d8;
     }
     /* Images list */
     #portfolio-list {
