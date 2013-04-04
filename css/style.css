@@ -274,14 +274,14 @@
         background:url('../images/tab-hover.png') no-repeat;
     }
     .tabs li.active a {
-        color:#356291;
+        color:#555;
     }
     .tabs li .tab-profile {
         background-image:url(../images/profile-icon.png);
         background-position:center 40px;
     }
     .tabs li .tab-resume {
-        background-image:url(../images/resume-icon.png);
+        background-image:url(../images/cv-icon.png);
         background-position:center 30px;
     }
     .tabs li .tab-portfolio {
@@ -297,7 +297,7 @@
         background-image:url(../images/profile-icon-active.png);
     }
     .tabs .active .tab-resume {
-        background-image:url(../images/resume-icon-active.png);
+        background-image:url(../images/cv-icon-active.png);
     }
     .tabs .active .tab-portfolio {
         background-image:url(../images/portfolio-icon-active.png);
