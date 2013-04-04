@@ -35,6 +35,14 @@
 
 </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=441325985931590";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!-- Container -->
         <div id="container">
 
@@ -84,9 +92,9 @@
 
                     <!-- Personal info section -->
                 	<ul class="personal-info">
-						<li><label>Name</label><span>Gerardo Orozco</span></li>
-                        <li><label>Location</label><span>Morelia, Michoacan</span></li>
-                        <li><label>Email</label><span>orozcomgera@gmail.com</span></li>
+						<li>
+                            <div class="fb-like" data-href="http://gerard-orozco.com/" data-send="false" data-width="200" data-show-faces="true" data-font="verdana"></div>
+                        </li>
                     </ul>
                     <!-- /Personal info section -->
                 </div>
