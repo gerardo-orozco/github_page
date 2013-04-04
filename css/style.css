@@ -86,7 +86,7 @@
         line-height:40px;
     }
     #logo h4 {
-        color:#666;
+        color:#3489d8;
         line-height:20px;
     }
     /* Social icons */
@@ -170,11 +170,11 @@
         background-repeat:repeat-x;*/
         overflow:hidden;
         background: #ccc;
-        background: -webkit-gradient(linear, left top, left bottom, from(#e0ecff), to(#647fe0));
-        background: -webkit-linear-gradient(top, #e0ecff, #647fe0);
+        background-image: url(../images/bg.png);
+        /*background: -webkit-linear-gradient(top, #e0ecff, #647fe0);
         background: -moz-linear-gradient(top, #e0ecff, #647fe0);
         background: -ms-linear-gradient(top, #e0ecff, #647fe0);
-        background: -o-linear-gradient(top, #e0ecff, #647fe0);
+        background: -o-linear-gradient(top, #e0ecff, #647fe0);*/
     }
     /* About */
     .about {
@@ -208,7 +208,7 @@
     .about p {
         font-size:14px;
         margin-top:15px;
-        color:#333;
+        color:#fff;
         line-height:20px;
     }
     /* Personal info */
@@ -467,7 +467,7 @@
         width:180px;
     }
     #portfolio-list li:hover {
-        border-bottom:2px solid #999;
+        border-bottom:2px solid #3489d8;
         height:185px;
     }
     #portfolio-list img {
@@ -475,9 +475,13 @@
         width:180px;
         height:120px;
     }
-    #portfolio-list li:hover .title {
-        color:#777;
-        font-weight: bold;
+    #portfolio-list li a {
+        width: 180px;
+        display: block;
+    }
+    #portfolio-list li:hover .title, #portfolio-list li:hover .categorie {
+        color:#3489d8;
+        /*font-weight: bold;*/
     }
     #portfolio-list li .title {
         font-size:14px;
