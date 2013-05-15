@@ -346,6 +346,7 @@
     .timeline li .timelineUnit h4 {
         line-height:24px;
         font-size:15px;
+        font-weight: bold;
         color: #444;
     }
     .timeline li .timelineUnit h5 {
@@ -357,6 +358,9 @@
         color: #666;
         font-size:12px;
         margin-top:5px;
+    }
+    .timeline li .timelineUnit p em {
+        font-style: italic;
     }
     /* Skills Section */
     .skills-section {
