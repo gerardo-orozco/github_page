@@ -9,9 +9,13 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/fancybox.css"/>
+        <link rel="stylesheet" type="text/css" href="css/superslides.css"/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-enhanced.min.js"></script>
+        <script type="text/javascript" src="js/jquery.superslides.min.js"></script>
         <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
         <script type="text/javascript" src="js/respond.min.js"></script>
         <script type="text/javascript" src="js/jquery.adipoli.min.js"></script>
@@ -31,19 +35,19 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
-
     </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=441325985931590";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=441325985931590";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div id="container">
-
             <div class="top">
                 <div id="logo">
                     <h2>GERARDO OROZCO</h2>
@@ -57,9 +61,9 @@
                     <li><a href="http://mx.linkedin.com/pub/gerardo-orozco-mosqueda/38/a93/374" class="social-in" target="_blank"></a></li>
                     <li><a href="https://plus.google.com/u/0/110868260697546874444/posts" class="social-googleplus" target="_blank"></a></li>
                 </ul>
-                </div>
-            <div id="content" >
+            </div>
 
+            <div id="content" >
                 <div id="profile">
                      <div class="about">
                         <div class="photo-inner"><img src="images/photo.jpg" height="186" width="153" /></div>
@@ -92,7 +96,7 @@
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                         </li>
                     </ul>
-                    </div>
+                </div>
                 <div class="menu">
                     <ul class="tabs">
                         <li class="tmenu"><a href="#profile" class="tab-profile">Profile</a></li>
@@ -109,10 +113,9 @@
                                 <div class="timelineUnit">
                                     <h4>Buzzfeed Inc.<span class="timelineDate">November 2012 - Date</span></h4>
                                     <h5>Software Eng.</h5>
-                                    <p>I am part of a team of backend developers building internal services
-                                         for the management of the company’s advertising campaigns built around
-                                         several ads vendors, which allows the company to have a complete and
-                                         easy way to manage their ads campaigns together in a single platform.
+                                    <p> am part of the Ads Technology Team, which builds services for the management
+                                        of the company’s advertising campaigns built around several ads vendors,
+                                        which allows the company to have a complete and easy way to administrate its ads.
                                     </p>
                                 </div>
                             </li>
@@ -169,7 +172,7 @@
                             <div class="clear"></div>
                         </ul>
                         <h3 class="main-heading"><span>Quality Assurance</span></h3>
-                         <ul class="timeline">
+                        <ul class="timeline">
                             <li>
                                 <div class="timelineUnit">
                                     <h4>Processes</h4>
@@ -236,13 +239,14 @@
                      </div>
                      <div class="clear"></div>
                 </div>
-                <div id="portfolio">
 
+                <div id="portfolio">
                      <ul id="portfolio-filter">
                         <li><a href="" class="current" data-filter="*">All</a></li>
                         <li><a href="" data-filter=".professional">Professional</a></li>
                         <li><a href="" data-filter=".open-source">Open Source</a></li>
                     </ul>
+
                     <div class="extra-text">Here is some of my work so far:</div>
 
                     <ul id="portfolio-list">
@@ -294,23 +298,53 @@
                                 <h2 class="title">Django Paper Doll</h2>
                                 <span class="categorie">Open Source</span>
                             </a>
+
+                            <div id="slides">
+                                <ul class="slides-container">
+                                    <li>
+                                        <img src="images/portfolio/casahop/image1.png" alt="">
+                                        <div class="container">
+                                            Slide one
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/casahop/image2.png" alt="">
+                                        <div class="container">
+                                            Slide two
+                                        </div>
+                                    </li>
+                                </ul>
+                                <nav class="slides-navigation">
+                                <a href="#" class="next">Next</a>
+                                <a href="#" class="prev">Previous</a>
+                                </nav>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div id="contact">
                     <div class="contact-info">
-                    <h3 class="main-heading"><span>Let's talk! Feel free to ping me anytime!</span></h3>
-                    <ul>
-                        <li class="chat gmail"><a href="mailto:orozcomgera@gmail.com">orozcomgera@gmail.com</span></li>
-                        <li class="chat skype"><a href="callto:gerard.om?call">gerard.om</span></li>
-                        <li class="chat phone"><a href="callto:+524431626091">+52 443 162 6091</span></li>
-                    </ul>
+                        <h3 class="main-heading"><span>Let's talk! Feel free to ping me anytime!</span></h3>
+                        <ul>
+                            <li class="chat gmail"><a href="mailto:orozcomgera@gmail.com">orozcomgera@gmail.com</span></li>
+                            <li class="chat skype"><a href="callto:gerard.om?call">gerard.om</span></li>
+                            <li class="chat phone"><a href="callto:+524431626091">+52 443 162 6091</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer">
                 <div class="copyright">Copyright © 2013 Gerardo Orozco</div>
             </div>
-            </div>
-        </body>
-    </html>
+        </div>
+        <script type="text/javascript">
+            $('#slides').superslides({
+                slide_easing: 'easeInOutCubic',
+                slide_speed: 800,
+                pagination: true,
+                hashchange: true,
+                scrollable: true
+            });
+        </script>
+    </body>
+</html>
